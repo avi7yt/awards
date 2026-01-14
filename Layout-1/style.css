@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --primary:#ffffff;
+    --primaryfont:#000000;
+    --animefont: "Plus Jakarta Sans", sans-serif;
+
+    /* Custom font size*/
+
+    --font-sm: 0.7rem;
+    --font-md: 1.3rem;
+    --font-lg: 2.0rem;
+    --font-xl: 3.0rem;
+
+    /* responsive margin */
+    --margin-sm: 10px 20px;
+
+    /* custom margin */
+    --mtop-sm:10px;
+    --mtop-md:20px;
+    --mtop-lg:40px;
+    --mtop-xl:60px;
+}
+
+
+html {
+    font-family: var(--animefont);
+    color: black;
+    font-size: 10px;
+}
+
+.logo
+{
+    font-size: var(--font-lg);
+}
+
+.icon
+{
+    width: 20px;
+    height:20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+header
+{
+    height: 10vh;
+    padding:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+aside input 
+{
+    display: none;
+}
+
+nav 
+{
+    display: none;
+}
+ .login
+ {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius:15px;
+    font-size: var(--font-md);
+ }
+
+ #hero
+ {
+    margin: var(--margin-sm);
+    margin-top: 60px;
+ }
+
+
+ .brief p:nth-child(1)
+ {
+    font-size:3rem;
+    font-weight: 800;
+ }
+
+ .brief p:nth-child(2)
+ {
+    margin-top:var(--mtop-md);
+    font-size: var(--font-md);
+ }
+
+ .cards
+ {
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: var(--mtop-lg);
+ }
+
+ .item
+ {
+    background-color: gray;
+    border-radius: 5px;
+ }
+
+ .cards .item:nth-child(1)
+ {
+    grid-row:1/5;
+ }
+
+ .cards .item:nth-child(2)
+ {
+    grid-row: 1/3;
+ }
+
+ .cards .item:nth-child(3)
+ {
+    grid-row: 3/5;
+ }
+
+ .btn 
+ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .btn button
+ {
+    padding: 10px 35px;
+    background-color: #676565;
+    color: white;
+    border-radius: 23px;
+    border: none;
+ }
